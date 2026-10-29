@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tension · Floating Movement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#000; --ink:#fff; --sub:#888; --link:#ff2a2a; }
+    html, body{ margin:0; height:100%; overflow:hidden; background:var(--bg); color:var(--ink);
+      font-family:"IBM Plex Mono", ui-monospace, monospace; cursor:none; }
+    canvas{ display:block; }
+  </style>
+  <!-- 카메라 없음: p5만 사용 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+</head>
+<body>
+  <!-- 순서: 규칙 → 판(아두이노) → 프린터 → 그래픽 -->
+  <script src="rules.js"></script>
+  <script src="serial.js"></script>
+  <script src="print.js"></script>
+  <script src="tension.js"></script>
+</body>
+</html>
